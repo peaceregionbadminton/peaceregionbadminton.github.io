@@ -24,48 +24,34 @@
         <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
         <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
 		<style> 
-		
-		* {
-			box-sizing: border-box;
-		}
-
-		body {
-			font-family: Arial, Helvetica, sans-serif;
-		}
-
-		/* Float four columns side by side */
-		.column {
-					float: left;
-					width: 33%;
-					padding: 0 10px;
-				}
-
-		/* Remove extra left and right margins, due to padding */
-		.row {margin: 0 -5px;}
-
-		/* Clear floats after the columns */
-		.row:after {
-						content: "";
-						display: table;
-						clear: both;
-					}
-
-		/* Responsive columns */
-		@media screen and (max-width: 600px) {
-												.column {
-															width: 100%;
-															display: block;
-															margin-bottom: 20px;
-														}
-											}
-
-		/* Style the counter cards */
 		.card {
-					box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-					padding: 16px;
-					text-align: center;
-					background-color: #f1f1f1;
-				}
+  background-color: #f2f7f7;
+  color: black;
+  padding: 1rem;
+  
+}
+
+.cards {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1rem;
+}
+
+/* Screen larger than 600px? 2 column */
+@media (min-width: 600px) {
+  .cards { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* Screen larger than 900px? 3 columns */
+@media (min-width: 900px) {
+  .cards { grid-template-columns: repeat(3, 1fr); }
+}
+.section-1-container{
+						background-color: white;
+						padding-bottom: 20px;
+
+					}		
 			</style>
 
     </head>
@@ -94,7 +80,10 @@
 			                <a class="nav-link scroll-link" href="#section-4">Bubble Ball</a>
 			            </li>
 			            <li class="nav-item">
-			                <a class="nav-link scroll-link" href="#section-5">Contact Us</a>
+			                <a class="nav-link scroll-link" href="#section-5">FAQ</a>
+			            </li>
+						<li class="nav-item">
+			                <a class="nav-link scroll-link" href="#section-4">Contact Us</a>
 			            </li>
 			        </ul>
 			    </div>
@@ -109,24 +98,9 @@
        					<div class="carousel-inner">
        						<div class="carousel-item active">
        							<img src="assets/img/backgrounds/1.jpg" class="d-block w-100" alt="img1">
-								<div class="carousel-caption">
-									<h1></h1>
-									<div class="description wow fadeInUp">
-										<p>
-										</p>
-									</div>
-								</div>
        						</div>
        						<div class="carousel-item">
        							<img src="assets/img/backgrounds/2.jpg" class="d-block w-100" alt="img2">
-       						<!--<div class="carousel-caption">
-									<h1 class="wow fadeInLeftBig">This is Slide 2 of our Carousel</h1>
-									<div class="description wow fadeInUp">
-										<p>
-											You can download this free template on <a href="https://azmind.com" target="_blank">AZMIND</a>.
-										</p>
-									</div>
-								</div>-->
        						</div>
        					<div class="carousel-item">
        							<img src="assets/img/backgrounds/3.jpg" class="d-block w-100" alt="img3">     							
@@ -163,10 +137,10 @@
 
         <!-- Section 1 -->
         <div class="section-1-container section-container">
-	        <div class="container">
+	        <div class="container" >
 	            <div class="row">
 	                <div class="col section-1 section-description wow fadeIn">
-	                    <h2>Play Like A Champion Today</h2>
+	                    <h2 id="sec-1">Play Like A Champion Today</h2>
 	                    <div class="divider-1 wow fadeInUp"><span></span></div>
 	                </div>
 	            </div>
@@ -175,11 +149,11 @@
                 		<div class="row">
                 			<div class="col-md-4">
 			                	<div class="section-1-box-icon">
-			                		<i class="fas fa-magic"></i>
+			                		<i class="fas fa-ball"></i>
 			                	</div>
 		                	</div>
 	                		<div class="col-md-8">
-	                    		<h3>Professional Badmintol Classes</h3>
+	                    		<h3>Professional Badminton Classes</h3>
 	              
 	                    	</div>
 	                    </div>
@@ -224,72 +198,50 @@
 	            </div>
 	            <div class="row">
 	            	<div class="col section-2-box wow fadeInLeft">
-							<div class="row">
-							  <div class="column">
-								<div class="card">
-								  <h3>Mission</h3>
-								  <p>Some text</p>
-								  <p>Some text</p>
-								</div>
-							  </div>
-
-							  <div class="column">
-								<div class="card">
-								  <h3> Vision</h3>
-								  <p>Some text</p>
-								  <p>Some text</p>
-								</div>
-							  </div>
-							  
-							  <div class="column">
-								<div class="card">
-								  <h3>Our Value</h3>
-								  <p>Some text</p>
-								  <p>Some text</p>
-								</div>
-							  </div>
-
-							</div>
-	                </div>
-	            </div>
-	        </div>
-        </div>
+							<div class="cards">
+								  <div class="card"><h3></h3><p>Peace Region Badminton and Recreational Club is a registered institution working towards the betterment of the citizens of the Peace Region by providing health-oriented recreational activities, taking care of the mental as well as physical health of our members.</p></div>
+								  <div class="card"><h3 style="text-align:center;">Mission</h3>
+								  <p>We strive to promote sports and a healthy lifestyle while taking care of your recreational needs. Our vision is to provide our members with a platform to practice sports and encourage our people to learn new sports.</p></div>
+								  <div class="card"><h3 style="text-align:center;"> Vision</h3>
+								  <p>We are a team of highly motivated and trained individuals promoting sports and recreational activities. Our club started off as a badminton training facility for young talent interested in learning the sport. We are currently expanding our services to include a broader range of sports and other recreational activities to be able to provide our citizens with a wide range of options to choose from.</p></div>
+							</div>			
+					</div>
+				</div>
+			</div>
+		</div>
 
 		<!-- Section 3 -->
-        <div class="section-4-container section-container">
+        <div class="section-3-container section-container">
 	        <div class="container">
 	        	
 	            <div class="row">
-	                <div class="col section-4 section-description wow fadeIn">
-	                    <h2>Badminton</h2>
+	                <div class="col section-3 section-description wow fadeIn">
+	                    <h2 id="sec-3" >Badminton</h2>
 	                    <div class="divider-1 wow fadeInUp"><span></span></div>
 	                </div>
-	            </div>
-	            
+	            </div>	            
 	            <div class="row">
-	                <div class="col-md-6 section-4-box wow fadeInLeft">
+	                <div class="col-md-6 section-3-box wow fadeInLeft">
 	                	<div class="row">
 	                		<div class="col-md-3">
-	                			<div class="section-4-box-icon">
+	                			<div class="section-3-box-icon">
 	                				<i class="fas fa-paperclip"></i>
 	                			</div>
 	                		</div>
 	                		<div class="col-md-9">
-	                			<h3>Professional Badminton Classes</h3>
-		                    	
+	                			<h3>Professional Badminton Classes</h3>           	
 	                		</div>
 	                	</div>
 	                </div>
-	                <div class="col-md-6 section-4-box wow fadeInLeft">
+	                <div class="col-md-6 section-3-box wow fadeInLeft">
 	                	<div class="row">
 	                		<div class="col-md-3">
-	                			<div class="section-4-box-icon">
+	                			<div class="section-3-box-icon">
 	                				<i class="fas fa-pencil-alt"></i>
 	                			</div>
 	                		</div>
 	                		<div class="col-md-9">
 	                			<h3>12 Weeks Programs, 2 Days a Week</h3>
-
 	                		</div>
 	                	</div>
 	                </div>
@@ -305,7 +257,6 @@
 	                		</div>
 	                		<div class="col-md-9">
 	                			<h3>2 Different Groups</h3>
-
 	                		</div>
 	                	</div>
 	                </div>
@@ -318,7 +269,6 @@
 	                		</div>
 	                		<div class="col-md-9">
 	                			<h3>Badminton + Bubble Ball Combo</h3>
-
 	                		</div>
 	                	</div>
 	                </div>
@@ -327,13 +277,13 @@
 	        </div>
         </div>
 		
-				<!-- Section 4 -->
-        <div class="section-3-container section-container">
+		<!-- Section 4 -->
+        <div  class="section-4-container section-container section-container-gray-bg">
 	        <div class="container">
 	        	
 	            <div class="row">
 	                <div class="col section-4 section-description wow fadeIn">
-	                    <h2>Bubble Ball</h2>
+	                    <h2 >Bubble Ball</h2>
 	                    <div class="divider-1 wow fadeInUp"><span></span></div>
 	                </div>
 	            </div>
@@ -348,7 +298,7 @@
 	                		</div>
 	                		<div class="col-md-9">
 	                			<h3>Bubble Ball</h3>
-		                    	<p>Bubble soccer, is the recreation/sport of playing football while half-encased inside an inflated torus bubble</>
+		                    	<p>Bubble soccer, is the recreation/sport of playing football while half-encased inside an inflated torus bubble</p>
 	                		</div>
 	                	</div>
 	                </div>
@@ -361,12 +311,10 @@
 	                		</div>
 	                		<div class="col-md-9">
 	                			<h3>2 Different Sizes (1.2M , 1.5M)</h3>
-
 	                		</div>
 	                	</div>
 	                </div>
-	            </div>
-	            
+	            </div>	            
 	            <div class="row">
 	                <div class="col-md-6 section-3-box wow fadeInLeft">
 	                	<div class="row">
@@ -377,7 +325,6 @@
 	                		</div>
 	                		<div class="col-md-9">
 	                			<h3>Flexible Hours</h3>
-
 	                		</div>
 	                	</div>
 	                </div>
@@ -390,25 +337,25 @@
 	                		</div>
 	                		<div class="col-md-9">
 	                			<h3>Rental Prices</h3>
-
 	                		</div>
 	                	</div>
 	                </div>
-	        </div>
-        </div>
-		
-		<!-- Section 5 -->
-        <div class="section-4-container section-container section-container-image-bg">
-	        <div class="container">
-	            <div class="row">
-	                <div class="col section-4 section-description wow fadeInLeftBig">
-	                	<h2>Section 4</h2>
-	                    <p>
-	                    	Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut 
-	                    	aliquip ex ea commodo consequat. Ut wisi enim ad minim veniam, quis nostrud.
-	                    </p>
+					</div>
+				<div class="row">
+	                <div class="col section-1 section-description wow">
+	                	
+	                    <iframe style="text-align:center;" width="560" height="315" src="https://www.youtube.com/embed/jMKgMEDfE6c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						
+	                    
 	                </div>
 	            </div>
+		</div>
+	</div>	
+		
+		<!-- Section 5 -->
+        <div class="section-1-container section-container">
+	        <div class="container">
+	            
 	        </div>
         </div>
 
@@ -432,7 +379,7 @@
 		<script src="assets/js/jquery-migrate-3.0.0.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-        <script src="assets/js/jquery.backstretch.min.js"></script>
+       <!-- <script src="assets/js/jquery.backstretch.min.js"></script>-->
         <script src="assets/js/wow.min.js"></script>
         <script src="assets/js/waypoints.min.js"></script>
         <script src="assets/js/scripts.js"></script>
