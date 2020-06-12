@@ -7,19 +7,52 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         
-        <title>Peace Region Badminton & Recreation Club</title>
+        <title>FAQ's</title>
 
         <!-- CSS -->
-
-		
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,600">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
         <link rel="stylesheet" href="assets/css/animate.css">
         <link rel="stylesheet" href="assets/css/style.css">
         <link rel="stylesheet" href="assets/css/media-queries.css">
-		<script>document.getElementsByTagName("html")[0].className += " js";</script>
-		<link rel="stylesheet" href="assets/css/styleFAQ.css">
+
+        <!-- Favicon and touch icons -->
+        <link rel="shortcut icon" href="assets/ico/favicon.png">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+		<style> 
+		.card {
+  background-color: #f2f7f7;
+  color: black;
+  padding: 1rem;
+  
+}
+
+.cards {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1rem;
+}
+
+/* Screen larger than 600px? 2 column */
+@media (min-width: 600px) {
+  .cards { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* Screen larger than 900px? 3 columns */
+@media (min-width: 900px) {
+  .cards { grid-template-columns: repeat(3, 1fr); }
+}
+.section-1-container{
+						background-color: white;
+						padding-bottom: 20px;
+
+					}		
+			</style>
 
     </head>
 
@@ -28,156 +61,77 @@
 		<!-- Top menu -->
 		<nav class="navbar navbar-dark fixed-top navbar-expand-md navbar-no-bg">
 			<div class="container">
-				<a class="navbar-brand" href="index.html">Peace Region</a>
+				<a class="navbar-brand" href="index.html">Bootstrap 4 Carousel Template</a>
 			    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 			        <span class="navbar-toggler-icon"></span>
 			    </button>
 			    <div class="collapse navbar-collapse" id="navbarNav">
 			        <ul class="navbar-nav ml-auto">
 			            <li class="nav-item">
-			                <a class="nav-link" href="index.html">Home</a>
+			                <a class="nav-link scroll-link" href="index.html">Home</a>
 			            </li>
 			            <li class="nav-item">
-			                <a class="nav-link" href="index.html">About</a>
+			                <a class="nav-link scroll-link" href="index.html">About</a>
 			            </li>
 			            <li class="nav-item">
-			                <a class="nav-link" href="index.html">Badminton</a>
+			                <a class="nav-link scroll-link" href="#index.html">Badminton</a>
 			            </li>
 			            <li class="nav-item">
-			                <a class="nav-link" href="index.html">Bubble Ball</a>
+			                <a class="nav-link scroll-link" href="index.html">Bubble Ball</a>
 			            </li>
 			            <li class="nav-item">
 			                <a class="nav-link" href="FAQ.html">FAQ</a>
 			            </li>
 						<li class="nav-item">
-			                <a class="nav-link" href="#section-4">Contact Us</a>
+			                <a class="nav-link scroll-link" href="Contact.html">Contact Us</a>
 			            </li>
 			        </ul>
 			    </div>
 		    </div>
 		</nav>
 
+ 
 
+        <!-- FAQ Section  -->
 
-
-
-
-<header class="cd-header flex flex-column flex-center">
-  <div class="text-component text-center">
-    <h1>FAQ</h1>
-
-  </div>
-</header>
-
-<section class="cd-faq js-cd-faq container max-width-md margin-top-lg margin-bottom-lg">
-	<ul class="cd-faq__categories">
-		<li><a class="cd-faq__category cd-faq__category-selected truncate" href="#basics">Basics</a></li>
-		<!--<li><a class="cd-faq__category truncate" href="#mobile">Mobile</a></li>
-		<li><a class="cd-faq__category truncate" href="#account">Account</a></li>
-		<li><a class="cd-faq__category truncate" href="#payments">Payments</a></li>
-		<li><a class="cd-faq__category truncate" href="#privacy">Privacy</a></li>
-		<li><a class="cd-faq__category truncate" href="#delivery">Delivery</a></li>-->
-	</ul> <!-- cd-faq__categories -->
-
-	<div class="cd-faq__items">
-		<ul id="basics" class="cd-faq__group">
-			<li class="cd-faq__title"><h2>Basics</h2></li>
-			<li class="cd-faq__item">
-				<a class="cd-faq__trigger" href="#0"><span>What kind of space is needed for the event?</span></a>
-				<div class="cd-faq__content">
-          <div class="text-component">
-            <p>When planning an event with Battle Balls you’ll need a gym free of benches and/or other climbing apparatus’.</p>
-			<p>Battle Balls can also be used outside on a soccer field provided it’s well-groomed without rocks or other debris. Turf fields also work great for Battle Ball events.</p>
-          </div>
-				</div> <!-- cd-faq__content -->
-			</li>
-
-			<li class="cd-faq__item">
-				<a class="cd-faq__trigger" href="#0"><span>How much does it cost?</span></a>
-				<div class="cd-faq__content">
-          <div class="text-component">
-            <p>Prices on average are $15/person.</p>
-          </div>
-				</div> <!-- cd-faq__content -->
-			</li>
-
-			<li class="cd-faq__item">
-				<a class="cd-faq__trigger" href="#0"><span>Is there a deposit?</span></a>
-				<div class="cd-faq__content">
-          <div class="text-component">
-            <p>A $75 deposit is required when the event is booked.</p>
-          </div>
-				</div> <!-- cd-faq__content -->
-			</li>
-
-			<li class="cd-faq__item">
-				<a class="cd-faq__trigger" href="#0"><span>What happens if I have to cancel my event?</span></a>
-				<div class="cd-faq__content">
-          <div class="text-component">
-            <p>We will happily refund your deposit if you provide more than 48 hours notice prior to your event. However, if you cancel with less than 48 hours notice, your deposit is non-refundable.</p>
-          </div>
-				</div> <!-- cd-faq__content -->
-			</li>
-			
-			<li class="cd-faq__item">
-				<a class="cd-faq__trigger" href="#0"><span>Can I get hurt?</span></a>
-				<div class="cd-faq__content">
-          <div class="text-component">
-            <p>The equipment has been extensively tested for the games it is designed for. Like any sport we recommend using your best judgement while playing as you get comfortable; take proper safety precautions and wear supportive athletic shoes that you are comfortable running in.</p>
-          </div>
-				</div> <!-- cd-faq__content -->
-			</li>
-
-
-			<li class="cd-faq__item">
-				<a class="cd-faq__trigger" href="#0"><span>What material are Battle Balls made of?</span></a>
-				<div class="cd-faq__content">
-          <div class="text-component">
-            <p>Battle Balls are made of TPU Plastic. These Thermoplastic Polyurethane balls are stronger and more resistant than their PVC counterparts.</p>
-          </div>
-				</div> <!-- cd-faq__content -->
-			
-			<li class="cd-faq__item">
-				<a class="cd-faq__trigger" href="#0"><span>Is there a height/weight limit?</span></a>
-				<div class="cd-faq__content">
-					<div class="text-component">
-						<p>The height limit is between 3’6 and 6’6. We recommend a maximum weight of 200 lbs.</p>
-					</div>
-				</div> <!-- cd-faq__content -->
-			</li>
-			
-			<li class="cd-faq__item">
-				<a class="cd-faq__trigger" href="#0"><span>Is there an age limit?</span></a>
-				<div class="cd-faq__content">
-					 <div class="text-component">
-						<p>Children 6 and up. Although the limiting factor is height (Over 3’6). Children under 18 must be supervised at all times.</p>
-					 </div>
-				</div> <!-- cd-faq__content -->
-			</li>
-			
-			<li class="cd-faq__item">
-				<a class="cd-faq__trigger" href="#0"><span>What happens if I have to cancel my event?</span></a>
-				<div class="cd-faq__content">
-					<div class="text-component">
-						<p>We will happily refund your deposit if you provide more than 48 hours notice prior to your event. However, if you cancel with less than 48 hours notice, your deposit is non-refundable.</p>
-					</div>
-				</div> <!-- cd-faq__content -->
-			</li>
-		</ul> <!-- cd-faq__group -->
-	</div> <!-- cd-faq__items -->
-
-	<a href="#0" class="cd-faq__close-panel text-replace">Close</a>
-  
-  <div class="cd-faq__overlay" aria-hidden="true"></div>
-</section> <!-- cd-faq -->
-<script src="assets/js/util.js"></script> <!-- util functions included in the CodyHouse framework -->
-<script src="assets/js/main.js"></script> 
-
-
-
-
-
-
+		<div class="box">
+		   <p class="heading">FAQ's</p>
+		   <div class="faqs">
+			  <details>
+				 <summary>What kind of space is needed for the event?</summary>
+				 <p class="text">When planning an event with Battle Balls you’ll need a gym free of benches and/or other climbing apparatus’.</p><p class="text">Battle Balls can also be used outside on a soccer field provided it’s well-groomed without rocks or other debris. Turf fields also work great for Battle Ball events.</p>
+			  </details>
+			  <details>
+				 <summary>How much does it cost?</summary>
+				 <p class="text">Prices on average are $15/person.</p>
+			  </details>
+			  <details>
+				 <summary>Is there a deposit?</summary>
+				 <p class="text">A $75 deposit is required when the event is booked.</p>
+			  </details>
+			  <details>
+				 <summary>What happens if I have to cancel my event?</summary>
+				 <p class="text">We will happily refund your deposit if you provide more than 48 hours notice prior to your event. However, if you cancel with less than 48 hours notice, your deposit is non-refundable.</p>
+			  </details>
+			  <details>
+				 <summary>Can I get hurt?</summary>
+				 <p class="text">The equipment has been extensively tested for the games it is designed for. Like any sport we recommend using your best judgement while playing as you get comfortable; take proper safety precautions and wear supportive athletic shoes that you are comfortable running in.</p>
+			  </details>
+			  <details>
+				 <summary>What material are Battle Balls made of?</summary>
+				 <p class="text">Battle Balls are made of TPU Plastic. These Thermoplastic Polyurethane balls are stronger and more resistant than their PVC counterparts.</p>
+			  </details>
+			  <details>
+				 <summary>Is there a height/weight limit?</summary>
+				 <p class="text">The height limit is between 3’6 and 6’6. We recommend a maximum weight of 200 lbs.</p>
+			  </details>
+			  <details>
+				 <summary>Is there an age limit?</summary>
+				 <p class="text">Children 6 and up. Although the limiting factor is height (Over 3’6). Children under 18 must be supervised at all times.</p>
+			  </details>
+		   </div>
+		</div>       
+	   
 
         <!-- Footer -->
         <footer class="footer-container">
@@ -199,7 +153,7 @@
 		<script src="assets/js/jquery-migrate-3.0.0.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-        <script src="assets/js/jquery.backstretch.min.js"></script>
+       <!-- <script src="assets/js/jquery.backstretch.min.js"></script>-->
         <script src="assets/js/wow.min.js"></script>
         <script src="assets/js/waypoints.min.js"></script>
         <script src="assets/js/scripts.js"></script>
