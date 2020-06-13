@@ -193,6 +193,31 @@ img { max-width: 100%; }
 .section-4-box h3 { margin-top: 0; padding: 0 0 10px 0; }
 
 
+.background {
+  background: url(assets/img/backgrounds/1.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	
+}
+
+
+.background img {
+		background-size: 100% 100%;
+	
+
+	  position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    opacity: 0.2;
+}
+
+
+
+
 .video-responsive{
     overflow:hidden;
     padding-bottom:56.25%;
